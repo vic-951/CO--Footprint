@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CO₂-Footprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../scripts/mobile.js" defer></script>
+    
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900 font-sans">
+    <header class="bg-gray-700 shadow-md p-6 w-full mx-auto">
+
+      <div class="mx-auto w-3/4 flex items-center justify-between ">
+        <div class="flex items-center space-x-2">
+          <img src="../data/img/logo/logo256.webp" alt="Logo" class="h-8 w-8">
+          <h1 class="text-xl text-gray-100 font-bold">CO₂-Footprint</h1>
+        </div>
+
+        <div class="relative md:static">
+          <button id="menu-toggle" class="md:hidden text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <nav id="nav-menu" class="hidden absolute top-12 left-0 w-96 shadow-md bg-gray-900 p-6 -ml-32 rounded-l-lg md:static md:block md:bg-transparent md:shadow-none md:p-0">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium m-0 p-0">
+              <li><a href="index.html" class="uppercase text-gray-100 hover:underline block py-2">Startseite</a></li>
+              <li><a href="emissions.html" class="uppercase text-gray-100 hover:underline block py-2">Emissionsdaten</a></li>
+              <li><a href="partner.html" class="uppercase text-gray-100 hover:underline block py-2">Partner</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="flex-grow mx-auto p-6 mt-24 w-auto md:w-3/5">
+      <h2 class="text-2xl font-bold mb-6">Impressum</h2>
+
+      <p class="mt-24 mb-4">
+        Angaben gemäß § 5 TMG:
+      </p>
+      <p class="mb-4">
+        CO₂-Footprint GmbH<br>
+        Musterstraße 42<br>
+        12345 Beispielstadt<br>
+        Deutschland
+      </p>
+
+      <p class="mb-4">
+        Vertreten durch:<br>
+        Dr. Lara Hoffmann
+      </p>
+
+      <p class="mb-4">
+        Kontakt:<br>
+        Telefon: +49 (0)123 4567890<br>
+        E-Mail: kontakt@co2-footprint.de
+      </p>
+
+      <p class="mb-4">
+        Registereintrag:<br>
+        Eintragung im Handelsregister.<br>
+        Registergericht: Amtsgericht Beispielstadt<br>
+        Registernummer: HRB 123456
+      </p>
+
+      <p class="mb-4">
+        Umsatzsteuer-ID:<br>
+        Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+        DE123456789
+      </p>
+
+      <p class="mb-4">
+        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+        Dr. Lara Hoffmann<br>
+        Musterstraße 42<br>
+        12345 Beispielstadt
+      </p>
+    </main>
+
+    <footer class="bg-white p-6 mt-24">
+      <div class="w-auto md:w-3/4 mx-auto flex justify-end gap-x-4">
+        <p class="text-gray-500 text-xs">&copy; 2025 CO₂-Footprint</p>
+        <a href="impressum.html" class="text-gray-900 text-xs hover:underline">Impressum</a>
+        <a href="datenschutz.html" class="text-gray-500 text-xs hover:underline">Datenschutz</a>
+      </div>
+    </footer>
+  </body>
+</html>

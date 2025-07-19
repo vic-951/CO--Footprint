@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CO₂-Footprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../scripts/mobile.js" defer></script>
+    <script src="../scripts/tableData.js" defer></script>
+    
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900 font-sans">
+    <header class="bg-gray-700 shadow-md p-6 w-full mx-auto">
+
+      <div class="mx-auto w-3/4 flex items-center justify-between ">
+        <div class="flex items-center space-x-2">
+          <img src="../data/img/logo/logo256.webp" alt="Logo" class="h-8 w-8">
+          <h1 class="text-xl text-gray-100 font-bold">CO₂-Footprint</h1>
+        </div>
+
+        <div class="relative md:static">
+          <button id="menu-toggle" class="md:hidden text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <nav id="nav-menu" class="hidden absolute top-12 left-0 w-96 shadow-md bg-gray-900 p-6 -ml-32 rounded-l-lg md:static md:block md:bg-transparent md:shadow-none md:p-0">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium m-0 p-0">
+              <li><a href="index.html" class="uppercase text-gray-100 hover:underline block py-2">Startseite</a></li>
+              <li><a href="impressum.html" class="uppercase text-gray-400 font-bold hover:underline block py-2">Emissionsdaten</a></li>
+              <li><a href="partner.html" class="uppercase text-gray-100 hover:underline block py-2">Partner</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="flex-grow mx-auto p-6 mt-24 w-auto md:w-3/5">
+      <h2 class="text-2xl text-gray-700 font-bold mb-6">Willkommen zur CO₂-Emissionsübersicht</h2>
+      <p>Sie können die untenstehenden Filter verwenden, um sich eine Übersicht über den Emissionsbericht nach Ländern oder Unternehmen anzeigen zu lassen.<br>
+      Durch einen Klick auf den Tabellennamen können Sie die Werte sortieren lassen, durch mehrfaches Klicken schalten Sie um zwischen ASC und DESC.</p>
+    
+        <h1 class="mt-24 text-gray-700 text-2xl font-bold mb-6">CO₂-Emissionsdaten</h1>
+    
+        <div class="flex flex-wrap gap-4 mb-4">
+          <div class="dropdown relative">
+            <button id="btn-filter-country" class="bg-green-700 text-white px-4 py-2 rounded">Land</button>
+            <div id="filter-country" class="hidden dropdown-content absolute bg-white shadow rounded p-2 z-10 max-h-60 overflow-y-auto"></div>
+          </div>
+    
+          <div class="dropdown relative">
+            <button id="btn-filter-company" class="bg-green-700 text-white px-4 py-2 rounded">Unternehmen</button>
+            <div id="filter-company" class="hidden dropdown-content absolute bg-white shadow rounded p-2 z-10 max-h-60 overflow-y-auto"></div>
+          </div>
+    
+          <div class="dropdown relative">
+            <button id="btn-filter-year" class="bg-green-700 text-white px-4 py-2 rounded">Jahr</button>
+            <div id="filter-year" class="hidden dropdown-content absolute bg-white shadow rounded p-2 z-10 max-h-60 overflow-y-auto"></div>
+          </div>
+        </div>
+    
+        <table class="min-w-full bg-white shadow rounded">
+          <thead>
+            <tr class="bg-gray-200 text-left">
+              <th id="th-country" class="py-2 px-4">
+                Land <span id="sort-indicator-country" class="text-gray-400">⇅</span>
+              </th>
+              <th id="th-company" class="py-2 px-4">
+                Unternehmen <span id="sort-indicator-company" class="text-gray-400">⇅</span>
+              </th>
+              <th id="th-value" class="py-2 px-4">
+                Wert (t) <span id="sort-indicator-value" class="text-gray-400">⇅</span>
+              </th>
+              <th id="th-year" class="py-2 px-4">
+                Jahr <span id="sort-indicator-year" class="text-gray-400">⇅</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Data rows -->
+          </tbody>
+        </table>
+    </main>
+
+    <footer class="bg-white p-6 mt-24">
+      <div class="w-auto md:w-3/4 mx-auto flex justify-end gap-x-4">
+        <p class="text-gray-500 text-xs">&copy; 2025 CO₂-Footprint</p>
+        <a href="impressum.html" class="text-gray-500 text-xs hover:underline">Impressum</a>
+        <a href="datenschutz.html" class="text-gray-500 text-xs hover:underline">Datenschutz</a>
+      </div>
+    </footer>
+  </body>
+</html>
