@@ -15,26 +15,26 @@ Du möchtest z.B. alle Unternehmen alphabetisch sortiert haben, klicke hierzu au
 ![Sortieren nach Unternehmen](doc/anleitung_sortieren_unternehmen.png)
 ### Beispiel einer Kombination beider Kriterien
 Du möchtest nun z.B. alle Unternehmen eines bestimmten Landes anzeigen und diese anschließend Alphabetisch sortieren. Klicke dazu zuerst auf den Button `Land` und wähle dein gewünschtes Land,
-klicke anschließend auf den Spaltennamen `Unternehmen`, du siehst nun alle Unternehmen alphabetisch sortiert aus einem bestimmten Jahr.
+klicke anschließend auf den Spaltennamen `Unternehmen`, du siehst nun alle Unternehmen alphabetisch sortiert aus einem bestimmten Jahr.</br></br>
 ![Filtern und Sortieren](doc/anleitung_filter_und_sortieren.png)
 ## Features
 ### RTL LTR
-</br></br>
+</br>
 
 ![Video RTL LTR](doc/app_uebersicht.gif)
-</br></br>
+</br>
 
 ### Responsive
-</br></br>
+</br>
 
 ![Video Responsive](doc/app_responsive.gif)
-</br></br>
+</br>
 
 ### Filterung und Sortierung von Daten
-</br></br>
+</br>
 
 ![Video Filterung und Sortierung](doc/app_filtern_sortieren.gif)
-</br></br>
+</br>
 
 # Disclamer
 **Hinweis**: Bei diesem Projekt handelt es sich um eine rein **fiktive** Anwendung. Sollten reale Unternehmen existieren, deren Namen mit denen in diesem Projekt übereinstimmen, so sind sämtliche dargestellten Daten rein erfunden und nicht repräsentativ.
